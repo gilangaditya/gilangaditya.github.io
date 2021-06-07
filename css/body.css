@@ -1,0 +1,147 @@
+.desc {
+  max-width: 400px;
+}
+
+.tebel-banget {
+  font-weight: 900;
+}
+
+.tebel-sedang {
+  font-weight: bold;
+}
+
+.button {
+  background-color: rgb(232, 79, 136);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgb(189, 73, 116);
+  color: white;
+  min-width: 3000px;
+}
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 26px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 3px solid #333;
+  border-radius: 50%;
+  transition-duration: 0, 2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: #333;
+  color: #fff;
+}
+
+.gambar {
+  display: none;
+}
+
+.img {
+  width: 700px;
+  z-index: -1;
+}
+
+.link {
+  color: gray;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: rgb(165, 160, 250);
+}
+
+@media screen and (max-width: 600px) {
+  .img {
+    display: none;
+    width: 500px;
+  }
+
+  .gambar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .img {
+    display: none;
+    width: 500px;
+  }
+
+  .gambar {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .img {
+    width: 500px;
+    z-index: -1;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .img {
+    width: 300px;
+    z-index: -1;
+  }
+  #back-to-top-btn {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+/* animasi back to top */
+.btnEntrance {
+  animation-duration: 0, 5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* zoomIn */
+@keyframes btnEntrance {
+  form {
+    opacity: 0;
+    transform: scale(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.btnExit {
+  animation-duration: 0, 25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* zoomOut */
+@keyframes btnEntrance {
+  form {
+    opacity: 1;
+    transform: scale(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
